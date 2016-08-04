@@ -36,5 +36,7 @@ defmodule TodoApi.Endpoint do
     key: "_todo_api_key",
     signing_salt: "AUwGPM2M"
 
+  plug CORSPlug
+
   plug TodoApi.Router
 end
