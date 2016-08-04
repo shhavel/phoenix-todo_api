@@ -37,6 +37,7 @@ defmodule TodoApi.Mixfile do
      {:gettext, "~> 0.11"},
      {:cors_plug, "~> 1.1"},
      {:comeonin, "~> 2.0"},
+     {:secure_random, "~> 0.2"},
      {:cowboy, "~> 1.0"}]
   end
 
