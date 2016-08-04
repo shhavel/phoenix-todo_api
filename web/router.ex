@@ -9,5 +9,6 @@ defmodule TodoApi.Router do
     pipe_through :api
 
     resources "/todos", TodoController, except: [:new, :edit]
+    resources "/users", UserController, only: [:create]
   end
 end
