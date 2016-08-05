@@ -3,7 +3,7 @@ defmodule TodoApi.TodoTest do
 
   alias TodoApi.Todo
 
-  @valid_attrs %{description: "some content"}
+  @valid_attrs %{description: "some content", compleated: true, owner_id: 1}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do
