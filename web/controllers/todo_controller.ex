@@ -5,8 +5,6 @@ defmodule TodoApi.TodoController do
 
   plug :scrub_params, "todo" when action in [:create, :update]
 
-  plug TodoApi.Authentication
-
   def index(conn, _params) do
     user_id = conn.assigns.current_user.id
     query = from t in Todo, where: t.owner_id == ^user_id
