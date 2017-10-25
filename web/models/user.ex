@@ -6,7 +6,7 @@ defmodule TodoApi.User do
     field :password_hash, :string
     field :password, :string, virtual: true
 
-    timestamps
+    timestamps()
   end
 
   def changeset(struct, params \\ %{}) do
