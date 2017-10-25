@@ -6,7 +6,6 @@ defmodule TodoApi.TodoControllerTest do
   alias TodoApi.Session
 
   @valid_attrs %{complete: true, description: "some content"}
-  @invalid_attrs %{}
 
   setup %{conn: conn} do
     user = create_user(%{name: "jane"})
