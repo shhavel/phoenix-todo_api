@@ -5,7 +5,7 @@ defmodule TodoApi.Session do
     field :token, :string
     belongs_to :user, TodoApi.User
 
-    timestamps
+    timestamps()
   end
 
   @doc """
